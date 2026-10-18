@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>প্র্যাকটিস কুইজ | সুনাগরিক অলিম্পিয়াড</title>
+<meta name="description" content="১২টি প্রশ্নে নিজের নাগরিক-জ্ঞান যাচাই করো—তাৎক্ষণিক ব্যাখ্যা, বিষয়ভিত্তিক ফলাফল ও সময়সীমা।">
+<meta name="theme-color" content="#005a5c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="প্র্যাকটিস কুইজ | সুনাগরিক অলিম্পিয়াড">
+<meta property="og:description" content="১২টি প্রশ্নে নিজের নাগরিক-জ্ঞান যাচাই করো—তাৎক্ষণিক ব্যাখ্যা, বিষয়ভিত্তিক ফলাফল ও সময়সীমা।">
+<meta property="og:image" content="assets/img/og-card.png">
+<meta property="og:locale" content="bn_BD">
+<link rel="icon" href="assets/img/npa-logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="quiz">
+<a class="skip-link" href="#main">মূল অংশে যান</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/npa-logo.png" alt="NPA লোগো" width="48" height="48">
+      <span class="brand-text">
+        <strong>সুনাগরিক অলিম্পিয়াড</strong>
+        <small>NPA · ঢাকা ও চট্টগ্রাম</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="প্রধান মেনু">
+      <a class="nav-link" data-nav="index" href="index.html">হোম</a>
+      <a class="nav-link" data-nav="program" href="program.html">কর্মসূচি</a>
+      <a class="nav-link" data-nav="syllabus" href="syllabus.html">সিলেবাস</a>
+      <a class="nav-link" data-nav="schedule" href="schedule.html">সময়সূচি</a>
+      <a class="nav-link is-active" data-nav="quiz" aria-current="page" href="quiz.html">প্র্যাকটিস</a>
+      <a class="nav-link" data-nav="faq" href="faq.html">প্রশ্নোত্তর</a>
+    </nav>
+
+    <a class="btn btn-primary btn-sm nav-cta" href="register.html">বিনামূল্যে নিবন্ধন</a>
+
+    <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle theme">🌙 Dark</button> <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="মেনু খুলুন">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">হোম</a><span>/</span>প্র্যাকটিস কুইজ</p>
+    <h1>প্র্যাকটিস কুইজ</h1>
+    <p>মূল অনলাইন রাউন্ডের নমুনা—১২টি প্রশ্ন, ১০ মিনিট। প্রতিটি উত্তরের পরেই ব্যাখ্যা পাবে, শেষে বিষয়ভিত্তিক ফলাফল। এখানকার স্কোর কোনোভাবে মূল প্রতিযোগিতার নম্বরে যোগ হবে না।</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="quiz-shell" id="quiz-app">
+
+      <div id="quiz-intro" class="quiz-card">
+        <span class="quiz-meta">১০ মিনিট · ১২ প্রশ্ন · ৫ বিষয়</span>
+        <h2 style="font-size:clamp(1.3rem,2.6vw,1.7rem)">নিজেকে যাচাই করার সবচেয়ে সহজ উপায়</h2>
+        <p class="muted">প্রতিটি প্রশ্নের চারটি বিকল্প। একটি বেছে নিলেই সঠিক উত্তর ও সংক্ষিপ্ত ব্যাখ্যা দেখতে পাবে। সময় শেষ হলে স্বয়ংক্রিয়ভাবে ফলাফল আসবে।</p>
+        <ul style="font-size:.94rem;color:var(--ink-soft)">
+          <li>নেগেটিভ মার্কিং নেই—অনুমান করেও ক্ষতি নেই।</li>
+          <li>প্রশ্নগুলো সংবিধান, আইন ও সরকারি প্রতিবেদনভিত্তিক।</li>
+          <li>ফলাফলে কোন বিষয়ে দুর্বল তা দেখা যাবে, সেটাই তোমার প্রস্তুতির তালিকা।</li>
+        </ul>
+        <button class="btn btn-primary" type="button" id="quiz-start">কুইজ শুরু করো →</button>
+        <noscript><p class="form-note" style="margin-top:14px">কুইজ চালাতে ব্রাউজারে জাভাস্ক্রিপ্ট চালু করতে হবে।</p></noscript>
+      </div>
+
+      <div id="quiz-play" hidden>
+        <div class="quiz-top">
+          <span id="quiz-counter">প্রশ্ন ১ / ১২</span>
+          <span>সময় বাকি <strong id="quiz-timer">১০:০০</strong></span>
+        </div>
+        <div class="quiz-progress" aria-hidden="true"><span id="quiz-bar"></span></div>
+        <div id="quiz-card" class="quiz-card" aria-live="polite"></div>
+      </div>
+
+      <div id="quiz-result" hidden></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="callout reveal">
+      <p><strong>মূল পরীক্ষায় ৬০ প্রশ্ন।</strong> এই ১২টি প্রশ্ন শুধু স্বাদ—সিলেবাসের প্রতিটি মডিউল থেকে ১২টি করে প্রশ্ন আসবে অনলাইন রাউন্ডে। <a href="syllabus.html">সিলেবাস দেখে</a> প্রস্তুতি নাও।</p>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/quiz.js" defer></script>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/npa-logo.png" alt="" width="56" height="56">
+      <p class="footer-word">সুনাগরিক অলিম্পিয়াড</p>
+      <p class="footer-line">নাগরিকত্ব কোনো পদবি নয় — একটি দৈনন্দিন চর্চা।</p>
+      <p class="footer-org">আয়োজনে <a href="https://ournpa.org/" target="_blank" rel="noopener">নেটওয়ার্ক ফর পিপলস অ্যাকশন (NPA)</a></p>
+    </div>
+
+    <nav class="footer-col" aria-label="অলিম্পিয়াড">
+      <h3>অলিম্পিয়াড</h3>
+      <a href="program.html">কর্মসূচি ও রাউন্ড</a>
+      <a href="syllabus.html">সিলেবাস ও মানদণ্ড</a>
+      <a href="schedule.html">সময়সূচি</a>
+      <a href="quiz.html">প্র্যাকটিস কুইজ</a>
+      <a href="register.html">নিবন্ধন</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="সংগঠন">
+      <h3>সংগঠন</h3>
+      <a href="https://ournpa.org/manifesto" target="_blank" rel="noopener">ঘোষণাপত্র</a>
+      <a href="https://ournpa.org/membership" target="_blank" rel="noopener">সদস্য হোন</a>
+      <a href="https://ournpa.org/statistics" target="_blank" rel="noopener">পরিসংখ্যান</a>
+      <a href="faq.html">প্রশ্নোত্তর</a>
+    </nav>
+
+    <div class="footer-col footer-social">
+      <h3>যুক্ত থাকুন</h3>
+      <a href="https://www.facebook.com/ournpa" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/ournpa/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/our_npa" target="_blank" rel="noopener">X</a>
+      <a href="https://www.youtube.com/@our_npa" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://whatsapp.com/channel/0029Vb7qlDq1CYoQKV0MlK2Z" target="_blank" rel="noopener">WhatsApp চ্যানেল</a>
+      <a href="https://t.me/our_npa" target="_blank" rel="noopener">Telegram</a>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© ২০২৭ Network for People's Action (NPA)। অলিম্পিয়াডের প্রশ্নপত্র, সিলেবাস ও ফলাফল প্রকাশ্য।</p>
+    <p class="footer-legal">অংশগ্রহণ সম্পূর্ণ বিনামূল্যে ও দলীয় সদস্যপদ নিরপেক্ষ। ব্যক্তিগত তথ্য শুধু অলিম্পিয়াড পরিচালনা ও যোগাযোগের জন্য ব্যবহৃত হয় — <a href="faq.html#privacy">গোপনীয়তা নীতি</a>।</p>
+  </div>
+</footer>

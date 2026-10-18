@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>নিবন্ধন | সুনাগরিক অলিম্পিয়াড</title>
+<meta name="description" content="দুই মিনিটে বিনামূল্যে নিবন্ধন—ঢাকা ও চট্টগ্রাম, ১৬–৩০ বছর। আবেদন আইডি, অ্যাডমিট কার্ড ও সদস্যপদের সুযোগ।">
+<meta name="theme-color" content="#005a5c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="নিবন্ধন | সুনাগরিক অলিম্পিয়াড">
+<meta property="og:description" content="দুই মিনিটে বিনামূল্যে নিবন্ধন—ঢাকা ও চট্টগ্রাম, ১৬–৩০ বছর। আবেদন আইডি, অ্যাডমিট কার্ড ও সদস্যপদের সুযোগ।">
+<meta property="og:image" content="assets/img/og-card.png">
+<meta property="og:locale" content="bn_BD">
+<link rel="icon" href="assets/img/npa-logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="register">
+<a class="skip-link" href="#main">মূল অংশে যান</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/npa-logo.png" alt="NPA লোগো" width="48" height="48">
+      <span class="brand-text">
+        <strong>সুনাগরিক অলিম্পিয়াড</strong>
+        <small>NPA · ঢাকা ও চট্টগ্রাম</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="প্রধান মেনু">
+      <a class="nav-link" data-nav="index" href="index.html">হোম</a>
+      <a class="nav-link" data-nav="program" href="program.html">কর্মসূচি</a>
+      <a class="nav-link" data-nav="syllabus" href="syllabus.html">সিলেবাস</a>
+      <a class="nav-link" data-nav="schedule" href="schedule.html">সময়সূচি</a>
+      <a class="nav-link" data-nav="quiz" href="quiz.html">প্র্যাকটিস</a>
+      <a class="nav-link" data-nav="faq" href="faq.html">প্রশ্নোত্তর</a>
+    </nav>
+
+    <a class="btn btn-primary btn-sm nav-cta" href="register.html">বিনামূল্যে নিবন্ধন</a>
+
+    <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle theme">🌙 Dark</button> <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="মেনু খুলুন">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">হোম</a><span>/</span>নিবন্ধন</p>
+    <h1>নিবন্ধন</h1>
+    <p>ফি নেই, সদস্যপদ বাধ্যতামূলক নয়। শুধু সত্য তথ্য দিয়ে ফর্মটি পূরণ করো—আবেদন আইডি সঙ্গে সঙ্গে তৈরি হবে, সেটাই তোমার অ্যাডমিট কার্ডের ভিত্তি।</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <div class="form-card">
+        <div id="reg-form-wrap">
+          <h2 style="font-size:clamp(1.25rem,2.4vw,1.55rem)">আবেদন ফর্ম</h2>
+          <p class="form-note" style="margin-bottom:22px">তারকা (*) চিহ্নিত ঘরগুলো আবশ্যক। তথ্য শুধু অলিম্পিয়াড পরিচালনা ও যোগাযোগের জন্য ব্যবহৃত হবে।</p>
+          <form id="reg-form" novalidate autocomplete="on">
+            <div class="field">
+              <label for="name">পূর্ণ নাম *</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="যেমন: আয়েশা সিদ্দিকা" required>
+              <span class="err" role="alert"></span>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">মোবাইল নম্বর *</label>
+                <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="01XXXXXXXXX" required>
+                <span class="err" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="email">ইমেইল <span class="hint">(ঐচ্ছিক)</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                <span class="err" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="dob">জন্মতারিখ *</label>
+                <input id="dob" name="dob" type="date" min="1996-01-01" max="2011-01-09" required>
+                <span class="err" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="gender">লিঙ্গ <span class="hint">(ঐচ্ছিক)</span></label>
+                <select id="gender" name="gender">
+                  <option value="">নির্বাচন করুন</option>
+                  <option>পুরুষ</option>
+                  <option>নারী</option>
+                  <option>অন্যান্য</option>
+                  <option>বলতে ইচ্ছুক নই</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="institution">শিক্ষাপ্রতিষ্ঠান / পেশা *</label>
+              <input id="institution" name="institution" type="text" placeholder="যেমন: ঢাকা বিশ্ববিদ্যালয়, ২য় বর্ষ / ফ্রিল্যান্স ডিজাইনার" required>
+              <span class="err" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label>শহর *</label>
+              <div class="choice-group" role="radiogroup" aria-label="শহর">
+                <label class="choice"><input type="radio" name="city" value="ঢাকা" required> ঢাকা</label>
+                <label class="choice"><input type="radio" name="city" value="চট্টগ্রাম"> চট্টগ্রাম</label>
+              </div>
+              <span class="err" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="area">এলাকা / থানা <span class="hint">(ঐচ্ছিক)</span></label>
+              <input id="area" name="area" type="text" placeholder="যেমন: মিরপুর, ঢাকা">
+            </div>
+
+            <div class="field">
+              <label for="source">আমাদের সম্পর্কে জানলে কীভাবে?</label>
+              <select id="source" name="source">
+                <option value="">নির্বাচন করুন</option>
+                <option>ফেসবুক</option>
+                <option>ইনস্টাগ্রাম</option>
+                <option>বন্ধু বা সহপাঠী</option>
+                <option>ক্যাম্পাস অ্যাম্বাসেডর</option>
+                <option>ইউটিউব</option>
+                <option>অন্যান্য</option>
+              </select>
+            </div>
+
+            <div class="field" id="membership">
+              <label>সদস্যপদ</label>
+              <div class="choice-group" role="radiogroup" aria-label="সদস্যপদ">
+                <label class="choice"><input type="radio" name="membership" value="yes"> হ্যাঁ, এখনই সদস্য হতে চাই</label>
+                <label class="choice"><input type="radio" name="membership" value="later"> পরে ভাবব</label>
+                <label class="choice"><input type="radio" name="membership" value="no"> শুধু অলিম্পিয়াডে অংশ নিতে চাই</label>
+              </div>
+              <p class="form-note" style="margin-top:8px">সদস্যপদ নিলে বা না নিলে প্রতিযোগিতার ফলাফলে কোনো পার্থক্য হয় না। সদস্য হলে আলাদা সদস্যপদ ফর্ম পূরণ করতে হবে।</p>
+            </div>
+
+            <div class="check" id="ambassador">
+              <input type="checkbox" id="ambassador-interest" name="ambassador">
+              <label for="ambassador-interest">আমি ক্যাম্পাস অ্যাম্বাসেডর হিসেবে যোগ দিতে আগ্রহী <span class="hint">(ঐচ্ছিক)</span></label>
+            </div>
+
+            <div class="check field" style="display:flex">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent" style="font-weight:400">আমি <a href="faq.html#privacy" target="_blank">গোপনীয়তা নীতি</a> ও অংশগ্রহণের শর্ত পড়েছি এবং সম্মতি দিচ্ছি। * <span class="err" role="alert"></span></label>
+            </div>
+
+            <div class="check field" style="display:flex">
+              <input type="checkbox" id="truth" name="truth" required>
+              <label for="truth" style="font-weight:400">আমি নিশ্চিত করছি যে দেওয়া তথ্য সত্য এবং আমি ১৬–৩০ বছর বয়সী। * <span class="err" role="alert"></span></label>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit" id="reg-submit" style="margin-top:8px">আবেদন জমা দিন →</button>
+            <div class="form-status" id="reg-status" role="status" aria-live="polite"></div>
+            <p class="form-note" style="margin-top:14px">জমা দেওয়ার পরই তোমার আবেদন আইডি দেখতে পাবে। আইডিটি সংরক্ষণ করো।</p>
+          </form>
+        </div>
+
+        <div id="reg-success" class="success" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <aside class="sticky-aside">
+      <div class="card" style="margin-bottom:18px">
+        <p class="kicker">তিন ধাপ</p>
+        <h3>এরপর কী হবে</h3>
+        <ol style="font-size:.93rem;color:var(--ink-soft);padding-left:1.2em;margin-bottom:0">
+          <li><strong>আবেদন আইডি:</strong> সঙ্গে সঙ্গে পাবে, স্ক্রিনশট রাখো।</li>
+          <li><strong>অ্যাডমিট কার্ড:</strong> ৬ জানুয়ারি এসএমএস ও ইমেইলে লগইন লিংক।</li>
+          <li><strong>অনলাইন রাউন্ড:</strong> ৯ জানুয়ারি সকাল ১০টা, ৪৫ মিনিট।</li>
+        </ol>
+      </div>
+
+      <div class="card" style="margin-bottom:18px;background:var(--amber-soft);border-color:#f0dea6">
+        <h3>সদস্যপদ কী দেয়</h3>
+        <p style="color:#4a3b06">সদস্য হলে স্থানীয় কমিটির কার্যক্রম, মাসিক নাগরিক পাঠচক্র, নীতি-ল্যাবের আমন্ত্রণ ও সদস্য আইডি—তবে অলিম্পিয়াডের কোনো নম্বর বা সুযোগ এর ওপর নির্ভর করে না।</p>
+        <a class="card-link" href="https://ournpa.org/membership" target="_blank" rel="noopener" style="color:#4a3b06">NPA সদস্যপদ ফর্ম</a>
+      </div>
+
+      <div class="card">
+        <h3>সহায়তা দরকার?</h3>
+        <p>ফর্মে সমস্যা হলে বা টাকা চাওয়া হলে আমাদের <a href="https://www.facebook.com/ournpa" target="_blank" rel="noopener">ফেসবুক পেজে</a> মেসেজ দাও। কোনো অংশগ্রহণ ফি নেই—কেউ ফি চাইলে জানাও।</p>
+        <p class="form-note" style="margin-top:12px">১৬–১৭ বছর বয়সীদের বিভাগীয় রাউন্ডে অভিভাবকের সম্মতিপত্র লাগবে।</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<script src="assets/js/register.js" defer></script>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/npa-logo.png" alt="" width="56" height="56">
+      <p class="footer-word">সুনাগরিক অলিম্পিয়াড</p>
+      <p class="footer-line">নাগরিকত্ব কোনো পদবি নয় — একটি দৈনন্দিন চর্চা।</p>
+      <p class="footer-org">আয়োজনে <a href="https://ournpa.org/" target="_blank" rel="noopener">নেটওয়ার্ক ফর পিপলস অ্যাকশন (NPA)</a></p>
+    </div>
+
+    <nav class="footer-col" aria-label="অলিম্পিয়াড">
+      <h3>অলিম্পিয়াড</h3>
+      <a href="program.html">কর্মসূচি ও রাউন্ড</a>
+      <a href="syllabus.html">সিলেবাস ও মানদণ্ড</a>
+      <a href="schedule.html">সময়সূচি</a>
+      <a href="quiz.html">প্র্যাকটিস কুইজ</a>
+      <a href="register.html">নিবন্ধন</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="সংগঠন">
+      <h3>সংগঠন</h3>
+      <a href="https://ournpa.org/manifesto" target="_blank" rel="noopener">ঘোষণাপত্র</a>
+      <a href="https://ournpa.org/membership" target="_blank" rel="noopener">সদস্য হোন</a>
+      <a href="https://ournpa.org/statistics" target="_blank" rel="noopener">পরিসংখ্যান</a>
+      <a href="faq.html">প্রশ্নোত্তর</a>
+    </nav>
+
+    <div class="footer-col footer-social">
+      <h3>যুক্ত থাকুন</h3>
+      <a href="https://www.facebook.com/ournpa" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/ournpa/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/our_npa" target="_blank" rel="noopener">X</a>
+      <a href="https://www.youtube.com/@our_npa" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://whatsapp.com/channel/0029Vb7qlDq1CYoQKV0MlK2Z" target="_blank" rel="noopener">WhatsApp চ্যানেল</a>
+      <a href="https://t.me/our_npa" target="_blank" rel="noopener">Telegram</a>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© ২০২৭ Network for People's Action (NPA)। অলিম্পিয়াডের প্রশ্নপত্র, সিলেবাস ও ফলাফল প্রকাশ্য।</p>
+    <p class="footer-legal">অংশগ্রহণ সম্পূর্ণ বিনামূল্যে ও দলীয় সদস্যপদ নিরপেক্ষ। ব্যক্তিগত তথ্য শুধু অলিম্পিয়াড পরিচালনা ও যোগাযোগের জন্য ব্যবহৃত হয় — <a href="faq.html#privacy">গোপনীয়তা নীতি</a>।</p>
+  </div>
+</footer>
